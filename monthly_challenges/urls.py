@@ -1,4 +1,5 @@
-"""monthly_challenges URL Configuration
+"""
+monthly_challenges URL Configuration
 
 The `urlpatterns` list routes URLs to views. For more information please see:
     https://docs.djangoproject.com/en/4.0/topics/http/urls/
@@ -18,5 +19,5 @@ from django.urls import path, include
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path("challanges/", include('challenges.urls'))
+    path('challanges/', include('challenges.urls'))
 ]
