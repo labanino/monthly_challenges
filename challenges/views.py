@@ -18,16 +18,8 @@ monthly_challenges = {
 
 # Create your views here.
 
+def january(request):
+    return HttpResponse('Learn React as soon as possible!') 
 
-def monthly_challenge_by_number(request, month):
-    months = list(monthly_challenges.keys())
-    redirect_month = months[month]
-    return HttpResponseRedirect('/challanges/' + redirect_month)
-
-
-def monthly_challenge(request, month):
-    try:
-        challenge_text = monthly_challenges[month]
-        return HttpResponse(challenge_text)
-    except:
-        return HttpResponseNotFound('This month is not supported!')
+def february(request):
+    return HttpResponse('Need to start going to the gym again!')
